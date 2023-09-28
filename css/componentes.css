@@ -1,0 +1,161 @@
+@charset "UTF-8";
+
+/* card perfil */
+.card {
+   background-color: #f2f2f2;
+   border-radius: 10px;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   padding: 30px;
+   margin: 20px;
+   width: 300px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   transition: 500ms linear;
+}
+
+.card:hover {
+   transition: 500ms linear;
+}
+
+.transicaoCard:hover {
+   -webkit-transform: scale(1.1);
+   -ms-transform: scale(1.1);
+   transform: scale(1.1);
+}
+
+.card h2 {
+   font-size: 24px;
+   background-color: #f2f2f2;
+}
+
+.card p {
+   font-size: 18px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   background-color: #f2f2f2;
+}
+
+.button {
+   background-color: rgb(201, 84, 84);
+   border: none;
+   border-radius: 15px;
+   padding: 10px 20px;
+   color: white;
+   font-weight: bolder;
+   transition: 500ms linear;
+}
+
+.button:hover,
+.button:focus {
+   background: rgb(90, 90, 209);
+}
+
+.card img {
+   width: 250px;
+   height: auto;
+   margin-bottom: 20px;
+   background-color: #f2f2f2;
+   border-radius: 50%;
+   transition: 2000ms linear;
+}
+
+.card img:hover {
+   transform: rotateY(180deg);
+}
+
+.borda9D5C63 {
+   box-shadow: 5px 3px 10px 0px #8F9D50;
+}
+
+.bordaDCB8CB {
+   box-shadow: 5px 3px 10px 0px #976153;
+}
+
+.borda342F34 {
+   box-shadow: 5px 3px 10px 0px #D9AE24;
+}
+
+.borda576274 {
+   box-shadow: 5px 3px 10px 0px #576274;
+}
+
+.borda483F3A {
+   box-shadow: 5px 3px 10px 0px #483F3A;
+}
+
+.bordaCAE1F0 {
+   box-shadow: 5px 3px 10px 0px #CAE1F0;
+}
+
+.conteiner-cards {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   padding: 10px;
+   text-align: center;
+}
+
+.conteinerCarrousel {
+   position: relative;
+   padding: 50px;
+   max-width: 640px;
+   margin: 0 auto;
+}
+
+.carrousel {
+   overflow-x: auto;
+   -ms-overflow-style: none;
+}
+
+.carrousel::-webkit-scrollbar {
+   display: none;
+}
+
+.galeria {
+   display: flex;
+   flex-flow: row nowrap;
+   gap: 15px;
+}
+
+.setaEsquerda,
+.setaDireita {
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: auto;
+   bottom: 0;
+   font-size: 20px;
+   line-height: 250px;
+   width: 30px;
+   cursor: pointer;
+   border: none;
+   opacity: 0.3;
+   transition: all 600ms ease-in-out;
+   color: #fff;
+   background: linear-gradient(to left, transparent 0%, var(--cor04));
+}
+
+.setaDireita {
+   left: auto;
+   right: 0;
+   background: linear-gradient(to right, transparent 0%, var(--cor04));
+}
+
+.setaEsquerda:hover,
+.setaDireita:hover {
+   opacity: 1;
+}
+
+.item {
+   opacity: 0.2;
+   transition: all 600ms ease-in-out;
+   padding: 20px 25px;
+}
+
+.currentItem {
+   opacity: 1;
+}
+
